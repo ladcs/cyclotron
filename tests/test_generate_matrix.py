@@ -30,6 +30,6 @@ def test_matrix_4x5_1():
     value = 1
     lines = 4
     columns = 5
-    matrix_result = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1],
-                     [1, 1, 1, 1]]
+    matrix_result = [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1],
+                     [1, 1, 1, 1, 1]]
     assert generate_matrix(value, lines, columns) == matrix_result
