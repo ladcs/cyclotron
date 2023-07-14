@@ -1,5 +1,4 @@
-from src.change_lines_columns import change_line
-from src.change_lines_columns import change_column
+from src.helper.change_lines_columns import change_line, change_column
 
 
 def test_first_line_matrix_4x4():

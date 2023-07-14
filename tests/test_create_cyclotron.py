@@ -1,4 +1,4 @@
-from src.create_cyclotron import create_cyclotron
+from src.helper.create_cyclotron import create_cyclotron
 
 
 def test_less_4_lines_create_cyclotron():

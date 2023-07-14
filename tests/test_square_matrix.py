@@ -1,4 +1,4 @@
-from src.square_matrix import square_matrix
+from src.helper.square_matrix import square_matrix
 
 
 def test_square_matrix_d_less_4():

@@ -12,14 +12,15 @@ def change_column(particle, matrix):
         return matrix
     particle_list = [particle] * len(matrix)
     if particle == 'p':
-        for column in matrix:
-            column[-1] = particle_list[column[0]]
-            column[0] = particle_list[column[0]]
+        last_row = [*particle_list]
+        last_row[-1] = 1
+        for i in range(len(matrix)):
+            matrix[i][-1] = last_row[i]
+            matrix[i][0] = particle_list[i]
         matrix[-2][-2] = 'p'
-        matrix[-1][-1] = 1
         return matrix
-    for column in matrix:
-        column[-1] = particle_list[column[0]]
+    for i in range(len(matrix)):
+        matrix[i][-1] = particle_list[i]
     return matrix
 
 

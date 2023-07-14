@@ -1,4 +1,4 @@
-from src.generate_matrix import generate_matrix
+from src.helper.generate_matrix import generate_matrix
 
 
 def test_matrix_4x4_1():
