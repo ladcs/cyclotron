@@ -1,13 +1,15 @@
 def change_line(particle, matrix):
-    particle_first_line = [particle] * len(matrix[0])
-    matrix[0] = particle_first_line
+    particle_line = [particle] * len(matrix[0])
+    matrix[0] = particle_line
     if particle == 'p':
-        particle_last_line = particle_first_line
-        matrix[-1] = particle_last_line
+        matrix[-1] = [*particle_line]
+        matrix[-1][-1] = 1
     return matrix
 
 
 def change_column(particle, matrix):
+    if particle == 'n':
+        return matrix
     particle_list = [particle] * len(matrix)
     if particle == 'p':
         for column in matrix:
@@ -17,10 +19,10 @@ def change_column(particle, matrix):
         matrix[-1][-1] = 1
         return matrix
     for column in matrix:
-        column[-1] = particle_list[column[-1]]
+        column[-1] = particle_list[column[0]]
     return matrix
 
 
 if __name__ == '__main__':
-    print(change_column('p', [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1],
-                              [1, 1, 1, 1]]))
+    print(change_line('p', [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1],
+                            [1, 1, 1, 1]]))

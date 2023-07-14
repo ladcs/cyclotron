@@ -25,14 +25,14 @@ def test_first_line_matrix_3x4():
 def test_line_with_p_matrix_4x4():
     matrix = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
     matrix_result = [['p', 'p', 'p', 'p'], [1, 1, 1, 1], [1, 1, 1, 1],
-                     ['p', 'p', 'p', 'p']]
+                     ['p', 'p', 'p', 1]]
     assert change_line('p', matrix) == matrix_result
 
 
 def test_line_with_p_matrix_4x3():
     matrix = [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]]
     matrix_result = [['p', 'p', 'p'], [1, 1, 1], [1, 1, 1],
-                     ['p', 'p', 'p']]
+                     ['p', 'p', 1]]
     assert change_line('p', matrix) == matrix_result
 
 
