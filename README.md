@@ -73,7 +73,3 @@ Testa se ao enviar um valor para linhas (n), outro para colunas (m) e outro para
 Testa se ao enviar um valor para as dimensões da matriz quadrade menores que 4 retorna uma mensagem de erro.
 
 Testa se ao enviar dimensões de 4 e de 8 se retorna matriz quadrada com todos os valores em 1 com as dimensõees de 4 e 8 respectivamente.
-
-## Arquivo main.py
-
-Aqui ele imprime as matrizes quadrada 4x4 e 6x6 onde na primeira não passa a particula para o cyclotron, na segunda passa o eletron, na terceira passa um proton assim como na quarta, na quinta passa o neutron. Com exceção da quarta tabela, que é um 6x6, todas são 4x4.
